@@ -14,25 +14,30 @@
 }
 
 .header::after {
+	opacity: 0;
 	background-image: url(../../../public/react-white.svg);
 	content: "";
 	width: 64px;
 	height: 32px;
-	display: block;
 	background-repeat: no-repeat;
-	position: absolute;
 	top: 7px;
 	right: -18.5px;
+	transform: translate(0px, -30px);
+	animation: animeDown .3s forwards;
+	position: absolute;
 }
 
 .header::before {
+	opacity: 0;
 	content: "";
 	width: 48px;
 	height: 48px;
-	position: absolute;
 	background: #1566B1;
 	right: 0px;
 	border-radius: 0px 7px;
+	transform: translate(0px, -30px);
+	animation: animeDown .3s forwards;
+	position: absolute;
 }
 
 @keyframes animeDown {
@@ -127,8 +132,9 @@
 	}
 	.header::after {
 		background-image: url(../../../public/react.svg);
+		width: 40px;
 		top: 7px;
-		right: -20px;
+		right: 0px;
 		opacity: 1;
 	}
 	.header::before {

@@ -24,6 +24,7 @@
   grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
   gap: 1rem;
   padding: 0px;
+  margin: 0px;
 }
 
 .listItem {
