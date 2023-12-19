@@ -65,7 +65,7 @@
 
 .subInfoContainer p > span {
 	font-weight: 700;
-	color: #56688b;
+	color: #1566B1;
 }
 
 .headerFollows {
@@ -73,17 +73,17 @@
 	gap: 20px;
 	padding: 10px 10px;
 	border-radius: 5px;
-	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 	margin-top: 10px;
 }
 
 .headerFollows > p {
-	color: #56688b;
+	color: #272f3f;
 	font-weight: 500;
 }
 
 .headerFollows p > span {
-	color: #272f3f;
+	color: #1566B1;
 	font-weight: 600;
 }
 
