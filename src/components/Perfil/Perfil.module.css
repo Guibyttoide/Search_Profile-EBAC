@@ -1,0 +1,105 @@
+.header {
+	background-color: var(--corPrincipal);
+	display: flex;
+	height: 100%;
+	width: 100%;
+	gap: 2rem;
+	border-radius: 10px;
+	margin-bottom: 25px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+	transform: translate(0px, -30px);
+	animation: animeDown 1s forwards;
+}
+
+@keyframes animeDown {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}
+
+.avatar {
+	width: 12rem;
+	height: auto;
+	border-radius: 10px 0px 0px 10px;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	max-width: 100%;
+}
+
+.headerContainer {
+	padding: 1rem 0px;
+}
+
+.headerName > h1 {
+	color: #272f3f;
+	display: inline;
+	margin: 0px;
+}
+
+.headerName > p {
+	color: #56688b;
+	font-weight: normal;
+	margin: 0px;
+}
+
+.headerName {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.85rem;
+}
+
+.subInfoContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.subInfoContainer p {
+	color: #272f3f;
+	margin: 0px;
+	font-weight: 500;
+}
+
+.subInfoContainer p > span {
+	font-weight: 700;
+	color: #56688b;
+}
+
+.headerFollows {
+	display: flex;
+	gap: 20px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+	margin-top: 10px;
+}
+
+.headerFollows > p {
+	color: #56688b;
+	font-weight: 500;
+}
+
+.headerFollows p > span {
+	color: #272f3f;
+	font-weight: 600;
+}
+
+@media (max-width: 600px) {
+	.header {
+		flex-direction: column;
+	}
+	.avatar {
+		width: auto;
+		border-radius: 10px 10px 0px 0px;
+	}
+	.headerContainer {
+		padding: 0px 30px;
+		margin-bottom: 30px;
+	}
+	.headerFollows {
+		justify-content: center;
+	}
+}

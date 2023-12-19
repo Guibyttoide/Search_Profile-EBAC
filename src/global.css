@@ -1,0 +1,58 @@
+body {
+	background-color: var(--corSecundaria);
+	margin: 0px auto;
+	padding: 50px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.searchBar {
+	background: #ffffff;
+  color: #272f3f;
+	border: 0px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	font-size: 1.25rem;
+	margin-bottom: 25px;
+  padding-left: 20px;
+  transition: .3s;
+	opacity: 0;
+	transform: translate(0px, -25px);
+	animation: animeDown 1s forwards;
+}
+
+@keyframes animeDown {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}
+
+.searchBar:hover {
+  cursor: pointer;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+:root {
+	--corPrincipal: #ffffff;
+	--corSecundaria: #f0f3f9;
+}
+
+@media (max-width: 600px) {
+	body {
+		background-color: var(--corSecundaria);
+		margin: 0px auto;
+		padding: 30px 10px;
+	}
+}

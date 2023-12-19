@@ -1,0 +1,82 @@
+.Loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto;
+  border-top: 3px solid #1566B1;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  padding: 0px;
+}
+
+.listItem {
+  list-style: none;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+	transform: translate(0px, -25px);
+	animation: animeDown 1s forwards;
+}
+
+@keyframes animeDown {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}
+
+.listItemName b,
+.listItemLanguage b {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+  background: #f0f3f9;
+  color: #272f3f;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.listItemLanguage > span,
+.listItemName > span {
+  margin-left: 15px;
+}
+
+.listItemLink {
+  display: block;
+  background-color: #1566B1;
+  color: #fff;
+  border-radius: 7.5px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 12.5px;
+  text-decoration: none;
+  transition: .3s background-color;
+}
+
+.listItemLink:hover {
+  background-color: #197cd7;
+}
