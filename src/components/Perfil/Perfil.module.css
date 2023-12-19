@@ -10,6 +10,29 @@
   opacity: 0;
 	transform: translate(0px, -30px);
 	animation: animeDown 1s forwards;
+	position: relative;
+}
+
+.header::after {
+	background-image: url(../../../public/react-white.svg);
+	content: "";
+	width: 64px;
+	height: 32px;
+	display: block;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 7px;
+	right: -18.5px;
+}
+
+.header::before {
+	content: "";
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	background: #1566B1;
+	right: 0px;
+	border-radius: 0px 7px;
 }
 
 @keyframes animeDown {
@@ -101,5 +124,20 @@
 	}
 	.headerFollows {
 		justify-content: center;
+	}
+	.header::after {
+		background-image: url(../../../public/react.svg);
+		top: 7px;
+		right: -20px;
+		opacity: 1;
+	}
+	.header::before {
+		content: "";
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		background: #ffffff;
+		right: 0px;
+		border-radius: 0px 7px;
 	}
 }
